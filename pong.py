@@ -37,7 +37,7 @@ def setup_game():
    r_paddle.goto(400, 0)
 
    ball = turtle.Turtle()
-   ball.speed(40)
+   ball.speed(200)
    ball.shape('circle')
    ball.color('blue')
    ball.penup()
@@ -80,8 +80,8 @@ def pong_game():
        r_paddle.sety(r_paddle.ycor() - 20)
 
    screen.listen()
-   screen.onkeypress(l_paddle_up, 'e')
-   screen.onkeypress(l_paddle_down, 'x')
+   screen.onkeypress(l_paddle_up, 'w')
+   screen.onkeypress(l_paddle_down, 's')
    screen.onkeypress(r_paddle_up, 'Up')
    screen.onkeypress(r_paddle_down, 'Down')
 
